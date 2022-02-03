@@ -1,5 +1,6 @@
 package com.company;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
@@ -11,7 +12,11 @@ public class Main {
         double number2 = in.nextDouble();
         System.out.println("Enter your third number: ");
         double number3 = in.nextDouble();
-        double result = (number1 + number2 + number3)/3;
+
+        double Array[] = {number1, number2, number3};
+        Arrays.sort(Array);
+        double result = Array[1];
+
         System.out.println("Result: ");
         System.out.println(result);
     }
